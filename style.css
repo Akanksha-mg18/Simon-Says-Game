@@ -1,39 +1,76 @@
-body{
+body {
     text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
 }
-.btn{
+
+h1 {
+    font-size: 2.5rem;
+    margin-top: 1rem;
+    color: #4a4a4a;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+    color: #666;
+}
+
+.btn {
     height: 200px;
     width: 200px;
-    border: 10px solid black ;
+    border: 10px solid #333;
     border-radius: 20%;
-    margin: 10px;
-    margin: 2.5rem;
+    margin: 15px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
 }
-.btn-container{
+
+.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+}
+
+.btn-container {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
 }
-.red{
+
+.btn-lineone, .btn-linetwo {
+    display: flex;
+}
+
+.red {
     background-color: #d95980;
 }
-.green{
-    background-color:#63aac0;
 
+.green {
+    background-color: #63aac0;
 }
 
-.yellow{
+.yellow {
     background-color: #f99b45;
-
 }
 
-.purple{
+.purple {
     background-color: #819ff9;
-    
+}
 
-}
-.flash{
+.flash {
     background-color: white;
+    transition: background-color 0.1s;
 }
-.userflash{
-    background-color:aquamarine;
+
+.userflash {
+    background-color: aquamarine;
+    transition: background-color 0.1s;
+}
+
+.failed {
+    background-color: #ff6b6b;
+    transition: background-color 0.3s ease;
 }
